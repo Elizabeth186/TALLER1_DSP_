@@ -912,9 +912,9 @@ public class DeductionActivity extends AppCompatActivity {
                         } else if (work.equalsIgnoreCase("Manager") && work2.equalsIgnoreCase("Assistant")
                                 && work3.equalsIgnoreCase("Secretary")) {
                             if (hours <= 160 && hours2 <= 160 && hours3 <= 160) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
                                 if (salary > salary2 && salary > salary3) {
                                     txtmaxsalary.setText(String.format("the worker: %s got the highest salary de: %s", name, String.format("%.2f", salary)));
                                 } else if (salary2 > salary && salary2 > salary3) {
@@ -925,27 +925,27 @@ public class DeductionActivity extends AppCompatActivity {
 
                                 txtbono.setText("NO BONUS");
                             } else if (hours <= 160 && hours2 <= 160 && hours3 >= 161) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3), String.format("%.2f", salarymax3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3), String.format("%.2f", salarymax3)));
                                 txtmaxsalary.setText(String.format("the worker:  %s got the highest salary de: %s", name3, String.format("%.2f", salarymax3)));
                                 txtbono.setText("NO BONUS");
                             } else if (hours <= 160 && hours2 >= 161 && hours3 <= 160) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s\nBono : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s\nBono : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2), String.format("%.2f", salarymax2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s\nBono : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2), String.format("%.2f", salarymax2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRenta: %s\nsalary : %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
                                 txtmaxsalary.setText(String.format("the worker:  %s got the highest salary de: %s", name2, String.format("%.2f", salarymax2)));
                                 txtbono.setText("NO BONUS");
                             } else if (hours >= 161 && hours2 <= 160 && hours3 <= 161) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
                                 txtmaxsalary.setText(String.format("the worker:  %s got the highest salary de: %s", name, String.format("%.2f", salarymax)));
                                 txtbono.setText("NO BONUS");
                             } else if (hours >= 161 && hours2 >= 161 && hours3 >= 161) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2), String.format("%.2f", salarymax2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3), String.format("%.2f", salarymax3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2), String.format("%.2f", salarymax2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3), String.format("%.2f", salarymax3)));
 
                                 if (salarymax > salarymax2 && salarymax > salarymax3) {
                                     txtmaxsalary.setText(String.format("the worker:  %s got the highest salary, de: %s", name, String.format("%.2f", salarymax)));
@@ -955,12 +955,11 @@ public class DeductionActivity extends AppCompatActivity {
                                 } else if (salarymax3 > salarymax2 && salarymax3 > salarymax) {
                                     txtmaxsalary.setText(String.format("the worker:  %s got the highest salary de: %s", name3, String.format("%.2f", salarymax3)));
                                 }
-
                                 txtbono.setText("NO BONUS");
                             } else if (hours >= 161 && hours2 >= 161 && hours3 <= 161) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2), String.format("%.2f", salarymax2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2), String.format("%.2f", salarymax2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name3, last3, String.format("%.2f", isss3), String.format("%.2f", afp3), String.format("%.2f", rent3), String.format("%.2f", salary3)));
                                 if (salarymax > salarymax2) {
                                     txtmaxsalary.setText(String.format("the worker:  %s got the highest salary, de: %s", name, String.format("%.2f", salarymax)));
 
@@ -970,9 +969,9 @@ public class DeductionActivity extends AppCompatActivity {
 
                                 txtbono.setText("NO BONUS");
                             } else if (hours <= 161 && hours2 >= 161 && hours3 >= 161) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBono : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBono : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBono : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name, last, String.format("%.2f", isss), String.format("%.2f", afp), String.format("%.2f", rent), String.format("%.2f", salary)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name2, last2, String.format("%.2f", isssmax2), String.format("%.2f", afpmax2), String.format("%.2f", rentmax2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3)));
 
                                 if (salarymax2 > salarymax3) {
                                     txtmaxsalary.setText(String.format("the worker:  %s got the highest salary, de: %s", name, String.format("%.2f", salarymax2)));
@@ -984,9 +983,9 @@ public class DeductionActivity extends AppCompatActivity {
 
                                 txtbono.setText("NO BONUS");
                             } else if (hours >= 161 && hours2 <= 161 && hours3 >= 161) {
-                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
-                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
-                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s\nBonus : %s\nSalary + bonus: %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3), String.format("%.2f", salarymax3)));
+                                txtresult.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name, last, String.format("%.2f", isssmax), String.format("%.2f", afpmax), String.format("%.2f", rentmax), String.format("%.2f", salarymax)));
+                                txtresult2.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name2, last2, String.format("%.2f", isss2), String.format("%.2f", afp2), String.format("%.2f", rent2), String.format("%.2f", salary2)));
+                                txtresult3.setText(String.format("Name: %s  %s\nIsss: %s\nAfp: %s\nRent: %s\nsalary : %s", name3, last3, String.format("%.2f", isssmax3), String.format("%.2f", afpmax3), String.format("%.2f", rentmax3), String.format("%.2f", salarymax3)));
 
                                 if (salarymax > salarymax3) {
                                     txtmaxsalary.setText(String.format("the worker:  %s got the highest salary, de: %s", name, String.format("%.2f", salarymax)));
