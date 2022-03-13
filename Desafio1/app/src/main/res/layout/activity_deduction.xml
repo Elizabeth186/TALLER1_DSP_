@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".DeductionActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deduction"
+            android:textColor="@color/dark_purple"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:textSize="30dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worker2"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/dark_purple"
+            android:textSize="15dp"/>
+
+<!--        WORK1-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+           >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginRight="40dp"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/etx_name1"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/nama"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/etx_last1"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/last_name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dates"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/black"
+                android:layout_marginRight="40dp"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/etx_work1"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/workstation"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/etx_hours1"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/hours"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+
+        </LinearLayout>
+
+        <!--        WORK2-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worker2"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/dark_purple"
+            android:textSize="15dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:textColor="@color/black"
+                android:layout_marginRight="40dp"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/etx_name2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/nama"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/etx_last2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/last_name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dates"
+                android:textColor="@color/black"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="40dp"
+                android:textSize="15dp"
+                />
+
+            <EditText
+                android:id="@+id/etx_work2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/workstation"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/etx_hours2"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/hours"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/worker3"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/dark_purple"
+            android:textSize="15dp"/>
+
+        <!--        WORK3-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/nama"
+                android:textColor="@color/black"
+                android:layout_marginRight="40dp"
+                android:textSize="15dp"
+                android:layout_gravity="center_vertical"
+                />
+
+            <EditText
+                android:id="@+id/etx_name3"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/nama"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/etx_last3"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/last_name"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dates"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="40dp"
+                    android:textSize="15dp"
+                    />
+
+
+            <EditText
+                android:id="@+id/etx_work3"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/workstation"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray"
+                />
+
+            <EditText
+                android:id="@+id/etx_hours3"
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/container_elevation_edittext"
+                android:elevation="20dp"
+                android:gravity="center"
+                android:hint="@string/hours"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_process"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="@string/process"
+            android:background="@drawable/container_button_clean"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            />
+<TextView
+    android:id="@+id/txtmaxsalary"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@color/black"
+    android:textSize="20dp"
+    android:layout_gravity="center"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginBottom="20dp"
+    />
+
+        <TextView
+            android:id="@+id/txtbono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+        <TextView
+            android:id="@+id/txtsalarymax300"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/accent_color"
+            android:textSize="20dp" />
+
+
+        <TextView
+            android:id="@+id/txtyesbono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/dark_purple"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/txtresult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/txtresult2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        <TextView
+            android:id="@+id/txtresult3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
